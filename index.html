@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rexzer — Build, Play &amp; Remix on the Web</title>
+  <meta name="description" content="Rexzer is a creative web studio crafting fast, playful, interactive websites, games and experiments." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%237c3aed'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>R</text></svg>" />
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">R</span>
+        <span class="brand-name">Rexzer</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#work">Work</a>
+        <a href="#stats">Stats</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">◐</button>
+        <a href="#contact" class="btn btn-primary btn-sm">Start a project</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-badge">✨ New — Rexzer Playground 2.0 is live</div>
+      <h1>Build, play<br />and <em>remix</em> the web.</h1>
+      <p class="lead">Rexzer is a creative studio shipping fast websites, mini-games and interactive experiments. Zero bloat, all delight — from idea to live URL in days.</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">See our work →</a>
+        <a href="#contact" class="btn btn-ghost">Get a quote</a>
+      </div>
+      <div class="hero-meta">
+        <div class="avatars" aria-hidden="true"><span>SK</span><span>JM</span><span>AR</span><span>+9</span></div>
+        <p><strong>2,400+ makers</strong> launched with Rexzer · ★★★★★ 4.9/5</p>
+      </div>
+
+      <div class="hero-terminal" role="img" aria-label="Demo terminal showing a project going live">
+        <div class="terminal-bar"><i></i><i></i><i></i><span>rexzer — live</span></div>
+        <div class="terminal-body">
+          <p><span class="t-green">$</span> rexzer create my-dream-site</p>
+          <p class="t-dim">✓ scaffolded in 0.8s · ✓ 98 lighthouse · ✓ deployed</p>
+          <p><span class="t-green">$</span> <span id="typed"></span><span class="caret">▍</span></p>
+          <div class="terminal-url">🔗 https://my-dream-site.rexzer.dev <button class="btn btn-primary btn-sm" id="copyBtn" type="button">Copy</button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGOS -->
+    <section class="logos container" aria-label="Trusted by">
+      <p>TRUSTED BY PLAYFUL TEAMS AT</p>
+      <div class="logo-row">
+        <span>Nebulon</span><span>Pixelforge</span><span>Loopcraft</span><span>Brightbox</span><span>Moonshot</span>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section container" id="features">
+      <p class="kicker">Why Rexzer</p>
+      <h2>Everything you need to ship something people love</h2>
+      <p class="sub">Pick a template or start from scratch. We handle speed, SEO and polish.</p>
+      <div class="grid-3">
+        <article class="card reveal">
+          <div class="icon">⚡</div>
+          <h3>Blazing fast</h3>
+          <p>Static-first builds, image optimization and edge caching. 95+ Lighthouse scores out of the box.</p>
+          <a href="#pricing" class="card-link">Learn more →</a>
+        </article>
+        <article class="card reveal">
+          <div class="icon">🎮</div>
+          <h3>Playable &amp; interactive</h3>
+          <p>Games, 3D scenes, quizzes and playgrounds — WebGL, canvas and WebGPU ready.</p>
+          <a href="#work" class="card-link">See examples →</a>
+        </article>
+        <article class="card reveal">
+          <div class="icon">🔁</div>
+          <h3>Remix anything</h3>
+          <p>Every project is forkable. Clone a site, tweak it live, and redeploy in one click.</p>
+          <a href="#contact" class="card-link">Try it →</a>
+        </article>
+        <article class="card reveal">
+          <div class="icon">🔍</div>
+          <h3>SEO &amp; sharing built-in</h3>
+          <p>Meta tags, sitemaps, Open Graph images and analytics with zero config.</p>
+          <a href="#stats" class="card-link">Our results →</a>
+        </article>
+        <article class="card reveal">
+          <div class="icon">🛡️</div>
+          <h3>Secure by default</h3>
+          <p>HTTPS everywhere, sandboxed previews and automatic dependency updates.</p>
+          <a href="#pricing" class="card-link">Plans →</a>
+        </article>
+        <article class="card reveal">
+          <div class="icon">💬</div>
+          <h3>Human support</h3>
+          <p>Real builders on chat, plus video walkthroughs for every launch. No bots-only maze.</p>
+          <a href="#contact" class="card-link">Say hi →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section container" id="work">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Selected work</p>
+          <h2>Fresh from the studio</h2>
+        </div>
+        <div class="filters" role="tablist" aria-label="Filter projects">
+          <button class="filter active" data-filter="all" type="button">All</button>
+          <button class="filter" data-filter="sites" type="button">Sites</button>
+          <button class="filter" data-filter="games" type="button">Games</button>
+          <button class="filter" data-filter="3d" type="button">3D</button>
+        </div>
+      </div>
+      <div class="grid-3" id="workGrid">
+        <article class="card work reveal" data-cat="sites">
+          <div class="thumb gradient-1"><span>☕</span></div>
+          <h3>Northwind Coffee</h3>
+          <p>Headless storefront · 0.6s load · +38% orders</p>
+          <div class="tags"><span>Sites</span><span>Astro</span></div>
+        </article>
+        <article class="card work reveal" data-cat="games">
+          <div class="thumb gradient-2"><span>👾</span></div>
+          <h3>Pixel Quest</h3>
+          <p>Canvas platformer · 120k plays in week one</p>
+          <div class="tags"><span>Games</span><span>Canvas</span></div>
+        </article>
+        <article class="card work reveal" data-cat="3d">
+          <div class="thumb gradient-3"><span>🪐</span></div>
+          <h3>Orbit Configurator</h3>
+          <p>WebGL product viewer · 3D + AR checkout</p>
+          <div class="tags"><span>3D</span><span>Three.js</span></div>
+        </article>
+        <article class="card work reveal" data-cat="sites">
+          <div class="thumb gradient-4"><span>🎧</span></div>
+          <h3>Waveform Festival</h3>
+          <p>Event site + ticketing · sold out in 48h</p>
+          <div class="tags"><span>Sites</span><span>Vite</span></div>
+        </article>
+        <article class="card work reveal" data-cat="games">
+          <div class="thumb gradient-5"><span>🧩</span></div>
+          <h3>Hexfall Puzzle</h3>
+          <p>Daily puzzle game · 40k streak players</p>
+          <div class="tags"><span>Games</span><span>PWA</span></div>
+        </article>
+        <article class="card work reveal" data-cat="3d">
+          <div class="thumb gradient-6"><span>🏎️</span></div>
+          <h3>Turbo Showroom</h3>
+          <p>WebGPU car viewer · 60fps on mobile</p>
+          <div class="tags"><span>3D</span><span>WebGPU</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section stats" id="stats">
+      <div class="container grid-4">
+        <div><strong><span class="count" data-target="2400">0</span>+</strong><p>projects launched</p></div>
+        <div><strong><span class="count" data-target="98">0</span></strong><p>avg. Lighthouse score</p></div>
+        <div><strong><span class="count" data-target="120">0</span>k</strong><p>monthly players</p></div>
+        <div><strong><span class="count" data-target="49">0</span>ms</strong><p>median edge latency</p></div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section container" id="testimonials">
+      <p class="kicker">Reviews</p>
+      <h2>Loved by makers</h2>
+      <div class="testimonial-wrap">
+        <blockquote class="testimonial card" id="testimonial">
+          <p id="quoteText">“Rexzer took our slow WordPress site and turned it into something that feels instant. Sales went up the same week.”</p>
+          <footer><span class="t-avatar" id="quoteAvatar">M</span><span><strong id="quoteName">Maya Chen</strong><br /><span id="quoteRole" class="t-dim">Founder, Northwind Coffee</span></span></footer>
+        </blockquote>
+        <div class="t-controls">
+          <button id="prevQuote" type="button" aria-label="Previous review">←</button>
+          <div class="dots" id="quoteDots"></div>
+          <button id="nextQuote" type="button" aria-label="Next review">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section container" id="pricing">
+      <p class="kicker">Pricing</p>
+      <h2>Simple plans, no surprises</h2>
+      <div class="billing-toggle">
+        <span>Monthly</span>
+        <button id="billingToggle" class="switch" role="switch" aria-checked="false" aria-label="Toggle yearly billing" type="button"><span></span></button>
+        <span>Yearly <em class="save">−20%</em></span>
+      </div>
+      <div class="grid-3">
+        <article class="card price reveal">
+          <h3>Starter</h3><p class="t-dim">For side projects</p>
+          <p class="amount">$<span data-monthly="0" data-yearly="0">0</span><small>/mo</small></p>
+          <ul><li>✓ 3 live sites</li><li>✓ Rexzer subdomain</li><li>✓ Community support</li></ul>
+          <a href="#contact" class="btn btn-ghost btn-block">Start free</a>
+        </article>
+        <article class="card price featured reveal">
+          <div class="pop">MOST POPULAR</div>
+          <h3>Studio</h3><p class="t-dim">For freelancers &amp; teams</p>
+          <p class="amount">$<span data-monthly="19" data-yearly="15">19</span><small>/mo</small></p>
+          <ul><li>✓ Unlimited sites</li><li>✓ Custom domains + SEO</li><li>✓ Games &amp; 3D support</li><li>✓ Priority chat</li></ul>
+          <a href="#contact" class="btn btn-primary btn-block">Start 14-day trial</a>
+        </article>
+        <article class="card price reveal">
+          <h3>Scale</h3><p class="t-dim">For companies</p>
+          <p class="amount">$<span data-monthly="79" data-yearly="63">79</span><small>/mo</small></p>
+          <ul><li>✓ Everything in Studio</li><li>✓ SSO &amp; audit logs</li><li>✓ Dedicated engineer</li></ul>
+          <a href="#contact" class="btn btn-ghost btn-block">Talk to sales</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container" id="contact">
+      <div class="contact-grid">
+        <div>
+          <p class="kicker">Contact</p>
+          <h2>Tell us about your idea</h2>
+          <p class="sub">We reply within one business day. Prefer email? <a href="mailto:hello@rexzer.dev">hello@rexzer.dev</a></p>
+          <ul class="contact-list">
+            <li>⚡ Quotes in 24h</li>
+            <li>🎯 Fixed price, no hourly billing</li>
+            <li>🚀 Launch in 1–3 weeks</li>
+          </ul>
+        </div>
+        <form class="card form" id="contactForm" novalidate>
+          <label>Name<input name="name" required placeholder="Ada Lovelace" autocomplete="name" /></label>
+          <label>Email<input name="email" type="email" required placeholder="ada@example.com" autocomplete="email" /></label>
+          <label>What do you want to build?
+            <select name="type"><option>Website</option><option>Mini-game</option><option>3D / WebGPU experience</option><option>Something else</option></select>
+          </label>
+          <label>Details<textarea name="message" rows="4" required placeholder="A playful portfolio with a game-like homepage…"></textarea></label>
+          <p class="form-error" id="formError" hidden></p>
+          <p class="form-success" id="formSuccess" hidden>🎉 Thanks! Your message is ready — we'll be in touch within 24h.</p>
+          <button class="btn btn-primary btn-block" type="submit">Send message →</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="brand"><span class="brand-mark">R</span><span class="brand-name">Rexzer</span></a>
+        <p class="t-dim">Build, play, and remix with the web.<br />© 2026 Rexzer Studio.</p>
+      </div>
+      <nav aria-label="Footer"><strong>Product</strong><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#work">Work</a></nav>
+      <nav aria-label="Company"><strong>Studio</strong><a href="#stats">About</a><a href="#testimonials">Reviews</a><a href="#contact">Contact</a></nav>
+      <nav aria-label="Social"><strong>Elsewhere</strong><a href="https://github.com/" rel="noopener">GitHub</a><a href="https://omgithub.com/" rel="noopener">OMGithub</a><a href="mailto:hello@rexzer.dev">Email</a></nav>
+    </div>
+    <button id="toTop" aria-label="Back to top" title="Back to top" type="button">↑</button>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
